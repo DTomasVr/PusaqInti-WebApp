@@ -11,89 +11,193 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="assets/js/index.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+  crossorigin="anonymous"
+/>
+<link rel="icon" type="image/x-icon" href="/assets/img/Logo.ico">
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="#" class="logo nav-link">PusaqInti</a>
-        <button class="nav-toggle" aria-label="Abrir menú">
+      <nav class="nav1">
+        <a href="#" class="logo nav-link1">PusaqInti</a>
+        <button class="nav-toggle1" aria-label="Abrir menú">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a href="#Hero" class="nav-menu-link nav-link">Inicio</a>
+        <ul class="nav-menu1">
+          <li class="nav-menu-item1">
+            <a href="#Hero" class="nav-menu-link1 nav-link1">Inicio</a>
           </li>
-          <li class="nav-menu-item">
-            <a href="#AboutUs" class="nav-menu-link nav-link">Sobre Nosotros</a>
+          <li class="nav-menu-item1">
+            <a href="#AboutUs" class="nav-menu-link1 nav-link1">Sobre Nosotros</a>
           </li>
-          <li class="nav-menu-item">
-            <a href="#WhoWeAre" class="nav-menu-link nav-link"
+          <li class="nav-menu-item1">
+            <a href="#WhoWeAre" class="nav-menu-link1 nav-link1"
               >¿Quiénes somos?</a
             >
           </li>
-          <li class="nav-menu-item">
+          <li class="nav-menu-item1">
+            <a href="login.html" class="nav-menu-link1 nav-link1"
+              >Inicia sesión</a
+            >
+          </li>
+          <li class="nav-menu-item1">
             <a
               href="#ContactUs"
-              class="nav-menu-link nav-link nav-menu-link_active"
+              class="nav-menu-link1 nav-link1 nav-menu-link_active1"
               >Contáctanos</a
             >
           </li>
         </ul>
       </nav>
     </header>
-    <div class="container">
-      <div class="item item-1">
-        <div class="form form_points">
-          <form class="form">
-            <label for="fname">Punto de Salida</label><br />
-            <input
-              type="text"
-              id="pstart"
-              name="pstart"
-              placeholder="Plaza de Armas de Lima"
-            /><br />
-            <label for="lname">Punto de Destino</label><br />
-            <input
-              type="text"
-              id="pdestiny"
-              name="pdestiny"
-              placeholder="Plaza Lima Sur"
-            /><br /><br />
-            <input class="submit-button" type="submit" value="Buscar Rutas" />
-          </form>
+    <section class="Hero" id="Hero">
+      <div class="heroCTA">
+        <div class="titleBox">
+          <h1 class="Title">Estas a un paso de tener un viaje seguro</h1>
+        </div>
+        <a class="LogIn" href="login.html">Iniciar sesión</a>
+      </div>
+      <img src='assets/img/Logo.png'class="LogoImage"></img>
+    </section>
+    <section class="AboutUs" id="AboutUs">
+      <div class="AboutUs-grid">
+        <h2 class="Title_AboutUs">Tu seguridad es primero</h2>
+        <div class="AboutUs-info1">
+          <div class="Pic">
+            <img src="assets\img\img1.jpeg" alt="" class="Image1">
+          </div>
+          <h3 class="Title_info">El tiempo y la seguridad es lo más importante</h2>
+          <div class="info" id="info1">Sabemos que la seguridad es lo más importante, por lo que te mostramos el camino más seguro y más parido</div>
+        </div>
+        <div class="AboutUs-info2">
+          <div class="Pic Image2">
+            <img src="assets\img\img2.jpeg" alt="" class="Image2">
+          </div>
+          <h3 class="Title_info">Consulta las 24 horas del día</h2>
+          <div class="info" id="info2">Podrás hacer tus consultas sobre la app con la inteligencia artificial las 24 hrs del día</div>
         </div>
       </div>
-      <div class="item item-2">
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              width="95%"
-              height="550px"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Lima&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe
-            ><style>
-              .mapouter {
-                position: relative;
-                text-align: right;
-                height: 550px;
-                width: auto;
-              }</style
-            ><style>
-              .gmap_canvas {
-                overflow: hidden;
-                background: none !important;
-                height: 550px;
-                width: auto;
-              }
-            </style>
+    </section>
+    <section class="WhoWeAre" id="WhoWeAre">
+      <div class="wrapper-participants">
+        <div class="Title_participants">
+          <h2 class="title">Conoce al equipo detras de la aplicación</h2>
+          <img src='assets/img/Logo.png' class="LogoParticipants"></img>
+        </div>
+        <div class="participant-grid participant_one">
+          <h3 class="participant-name">Javier Silva</h3>
+          <img src="assets/img/Javi.jpg" class="Pic Pic1"></img>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_two">
+          <h3 class="participant-name">Diego Villafuerte</h3>
+          <img src='assets/img/Diego.jpg'class="Pic Pic2"></img>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_three">
+          <h3 class="participant-name">Angel Zuñiga</h3>
+          <img src="assets/img/angel.jpg" class="Pic Pic3"></img>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_four">
+          <h3 class="participant-name">Sebastian Cataño</h3>
+          <img src="assets/img/Sebastian.jpg" class="Pic Pic4"></img>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="participant-grid participant_five">
+          <h3 class="participant-name">Gael Olaya</h3>
+          <img  src="assets/img/Gael.jpg"class="Pic Pic5"></img>
+          <div class="">
+            <a href="https://www.facebook.com" class="socialMedia">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" class="socialMedia">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="ContactUs" id="ContactUs">
+      <div class="wrapper-footer">
+        <div class="wrapper-one">
+          <h3 class="section-grid-title">Información</h3>
+          <span class="information-text"
+            >Siguenos en nuestras redes sociales</span
+          >
+          <div class="">
+            <a
+              href="https://www.facebook.com"
+              class="socialMedia socialMedia_footer"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              class="socialMedia socialMedia_footer"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              class="socialMedia socialMedia_footer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="wrapper-two">
+          <h3 class="section-grid-title">Navegación</h3>
+          <ul class="section-grid-list">
+            <a href="#AboutUs" class="footer-link"> > Sobre Nosotros</a>
+            <a href="#Hero" class="footer-link"> > Inicio</a>
+            <a href="login.html" class="footer-link"> > Iniciar Sesión</a>
+          </ul>
+        </div>
+        <div class="wrapper-three">
+          <h3 class="section-grid-title">Contáctanos</h3>
+          <ul class="section-grid-list">
+            <li class="grid-list-item">
+              <i class="fa-solid fa-location-dot"></i><span> Lima,Perú</span>
+            </li>
+            <li class="grid-list-item">
+              <i class="fa-solid fa-envelope"></i
+              ><span> contacto@PusaqInti.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
