@@ -17,9 +17,10 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
-.nav {
+.nav1 {
   display: flex;
   justify-content: space-between;
 
@@ -27,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-.nav-link {
+.nav-link1 {
   color: white;
   text-decoration: none;
 }
@@ -39,13 +40,18 @@ body {
   line-height: 80px; /* Tiene la misma altura que la barra por lo que siempre quedara centrado*/
 }
 
-.nav-menu {
+.logo:hover,
+.logo {
+  color: white;
+}
+
+.nav-menu1 {
   display: flex;
   margin-right: 40px;
   list-style: none;
 }
 
-.nav-menu-item {
+.nav-menu-item1 {
   font-size: 18px;
   margin: 0 10px;
   line-height: 80px;
@@ -53,18 +59,19 @@ body {
   width: max-content;
 }
 
-.nav-menu-link {
+.nav-menu-link1 {
   padding: 8px 12px;
   border-radius: 3px;
 }
 
-.nav-menu-link:hover,
-.nav-menu-link_active {
+.nav-menu-link1:hover,
+.nav-menu-link_active1 {
   background-color: gray;
   transition: 0.5s;
+  color: white;
 }
 
-.nav-toggle {
+.nav-toggle1 {
   color: white;
   background: none;
   border: none;
@@ -72,36 +79,310 @@ body {
   padding: 0 20px;
   line-height: 60px;
   cursor: pointer;
+
+  display: none;
 }
 
-.container {
-  margin-top: 100px;
+.Hero {
+  background-image: linear-gradient(black, black),
+    url("https://rutasdelima.pe/wp-content/uploads/2018/11/NuestrasObras-1024x683.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+}
+
+.heroCTA {
+  height: 100%;
+  width: 100%;
+}
+
+.titleBox {
+  width: 60%;
+  display: flex;
+  background-color: gray;
+  padding: 20px;
+  position: relative;
+  top: 25%;
+}
+
+.Title {
+  font-size: 60px;
+  margin-left: 30px;
+  text-align: left;
+  color: black;
+  bottom: 10px;
+}
+
+.LogIn {
+  width: 175px;
+  height: 50px;
+  opacity: 1;
+  background-color: gray;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 1%;
+  font-size: large;
+  color: white;
+  bottom: 50px;
+  left: 50px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.LogoImage {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  max-width: 350px;
+}
+
+.AboutUs {
+  background-color: gray;
+  display: flex;
+}
+
+.AboutUs-grid {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  height: 25%;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.gmap_canvas {
-  padding-right: 20px;
+.Title_AboutUs {
+  padding: 30px;
+  font-size: 38px;
+  margin-top: 20px;
+  position: relative;
+  left: 0px;
+  top: -250px;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: left;
 }
 
-.submit-button {
-  background-color: #2ecbe9;
-  border-color: #128fc8;
-  border-radius: 10%;
-  font-size: medium;
-}
-.submit-button:hover {
-  cursor: pointer;
+.AboutUs-info1 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: black;
+  align-items: center;
+  justify-content: center;
 }
 
-.item-1 {
+.AboutUs-info2 {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title_info {
+  position: relative;
+  top: 30px;
+  padding: 30px;
+}
+
+.info {
+  position: relative;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.Image1 {
+  background-image: url("/assets/img/img1.png");
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.Image2 {
+  background-image: url("/assets/img/img2.png");
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.WhoWeAre {
+  background-color: white;
+}
+
+.LogoParticipants {
+  background-image: url("/assets/img/Logo.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.wrapper-participants {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.Title_participants {
+  margin-top: 20px;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 24px;
 }
 
-.form_points {
-  top: 0;
+.participant-grid {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.Pic {
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.Pic1 {
+  background-image: url("assets\img\Javi.jpg");
+}
+.Pic2 {
+  background-image: url("/assets/img/Diego.jpg");
+}
+.Pic3 {
+  background-image: url("/assets/img/angel.jpg");
+}
+.Pic4 {
+  background-image: url("/assets/img/Sebastian.jpg");
+}
+.Pic5 {
+  background-image: url("/assets/img/Gael.jpg");
+}
+
+.ContactUs {
+  background-color: #333333;
+  height: 25%;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+section:first-of-type {
+  margin-top: 80px;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-footer {
+  display: grid;
+  height: 25%;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.section-grid-title {
+  text-transform: uppercase;
+}
+
+.wrapper-one {
+  grid-column: 1;
+  grid-row: 1/3;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+
+.socialMedia {
+  color: black;
+  text-decoration: none;
+}
+
+.socialMedia_footer {
+  color: white;
+}
+.information-text {
+  font-size: 16px;
+}
+.wrapper-two {
+  grid-column: 2;
+  grid-row: 1/3;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin: 3px;
+}
+
+.section-grid-list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.wrapper-three {
+  grid-column: 3;
+  grid-row: 1/3;
+  padding: 20px;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -120,7 +401,7 @@ body {
     line-height: 60px;
   }
 
-  .nav-menu {
+  .nav-menu1 {
     flex-direction: column;
     align-items: center;
     margin: 0;
@@ -138,25 +419,95 @@ body {
     transition: left 0.3s;
   }
 
-  .nav-menu-item {
+  .nav-menu-item1 {
     line-height: 70px;
   }
 
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
+  .nav-menu-link1:hover,
+  .nav-menu-link_active1 {
     background: none;
     color: black;
   }
 
-  .nav-toggle {
+  .nav-toggle1 {
     display: block;
   }
 
-  .nav-menu_visible {
+  .nav-menu_visible1 {
     left: 0;
   }
 
-  .nav-toggle:focus:not(:focus-visible) {
+  .nav-toggle1:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  section {
+    min-width: 100%;
+  }
+
+  section:first-of-type {
+    margin-top: 60px;
+  }
+
+  .Hero {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .heroCTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LogIn {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+  }
+
+  .titleBox {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .Title {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .LogoImage {
+    width: 170px;
+    height: 170px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .wrapper-participants {
+    display: flex;
+    flex-direction: column;
+  }
+  .WhoWeAre {
+    height: auto;
+  }
+
+  .AboutUs {
+    height: 100%;
+  }
+
+  .ContactUs {
+    height: max-content;
+  }
+  .wrapper-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Title_AboutUs {
+    position: sticky;
   }
 }
